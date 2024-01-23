@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="først.js"></script>
+    <script>
+        <h3>Hello world!</h3>
+    </script>
+    <script type = "application/javascript" src="først.js"></script>
 </head>
 <body>
-<input type="button" value="Hei verden" onclick="sayHello()">
-
-
+<h1>Uke 1 oppgaver </h1>
+<section>
+    <h2>Oppgave 1</h2>
+    <!--funksjon for en knapp som heter click on me, knappen har funksjonen helloWorld som skriver ut
+    hei verden-->
+    <button onclick="helloWorld()">Click on me</button>
+</section>
+<section>
+    <h2>Oppgave 2</h2>
+    <!--funksjon som gjør hvis du trykker på knappen får du alert boks-->
+    <button onclick="alertWorld()">Click on me</button>
+</section>
+<section>
+    <h3>Oppgave 3 </h3>
+    <label for="opp3">Skriv noe her: </label>
+    <!--Det som skal skrives her må ha samme id som oppgave tre og det som skal skrives inn
+    må være av type tekst-->
+    <!--onchange hendelsen gjør at vi blir tatt til ny side-->
+    <input for="opp3" type="text" onchange="toNySide(this.value)">
+</section>
+<section>
+<h3>Oppgave 4 </h3>
+    <label for="opp3">Skriv noe her : </label>
+    <input id="opp3" type="text" onchange="endre(this.value)">
+</section>
+<section>
+<h4>Oppgave 5 </h4>
+    <form>
+        <label for="opp5">Skriv noe her : </label>
+        <input id="opp5" type="text" onchange="popup(this.value)">
+    </form>
+</section>
 </body>
 </html>
