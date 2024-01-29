@@ -2,9 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title></title>
+    <script src="oblig1.js"></script>
+
 </head>
 <body>
-
+<h1>Bestilling av kinobilletter </h1>
+<label for="Film"> Velg film: </label>
+<select id="Film">
+    <option selected disabled>Velg film her</option>
+    <option label="Harry Potter og de vises stein"> Harry Potter og de vises stein</option>
+    <option label="Fast and Furious 6">Wolf of Wall Street</option>
+    <option label="Wolf of Wall Street"> Wolf of Wall Street</option>
+</select>
+<section>
+<label for="Antall"> Antall </label>
+<input id="Antall" type="number" onchange="sjekk();"/>
+</section>
+<section>
+<label for="Fornavn">Fornavn</label>
+<input id="Fornavn"type="text"/>
+</section>
+</section>
+<section>
+    <label for="Etternavn">Etternavn</label>
+    <input id="Etternavn"type="text"/>
+</section>
+</section>
+<section>
+    <label for="Telefonnr">Telefonnr</label>
+    <input id="Telefonnr"type="text"/>
+</section>
+</section>
+<section>
+    <label for="Epost">Epost</label>
+    <input id="Epost"type="text"/>
+</section>
+<button onclick="billettkjøp()">Kjøp billett</button>
 </body>
 </html>
