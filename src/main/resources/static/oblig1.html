@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title></title>
     <script src="oblig1.js"></script>
-
 </head>
 <body>
 <h1>Bestilling av kinobilletter </h1>
@@ -17,11 +16,11 @@
 </select>
 <section>
 <label for="Antall"> Antall </label>
-<input id="Antall" type="number" onchange="sjekk();"/>
+<input id="Antall" onchange="sjekkAntall()" />
 </section>
 <section>
 <label for="Fornavn">Fornavn</label>
-<input id="Fornavn"type="text"/>
+<input id="Fornavn" type="text" onchange="sjekkFornavn()"/>
 </section>
 </section>
 <section>
