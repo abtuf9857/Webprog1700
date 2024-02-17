@@ -9,7 +9,6 @@
 <table>
     <h1>Bestilling av kinobilletter </h1>
     <label for="Film"> Velg film: </label>
-    <span id="ikkeGyldig"></span>
     <select id="Film">
         <option selected disabled>Velg film her</option>
         <option label="Harry Potter og de vises stein"> Harry Potter og de vises stein</option>
@@ -23,25 +22,21 @@
     <section>
         <label for="Fornavn">Fornavn</label>
         <input id="Fornavn" type="text" onchange="sjekkFornavn()"/>
-        <span id="ikkeFornavn" style="color: red"></span>
     </section>
     </section>
     <section>
         <label for="Etternavn">Etternavn</label>
         <input id="Etternavn" type="text" onchange="sjekkEtternavn()"/>
-        <span id="ikkeEtternavn" style="color: red"></span>
     </section>
     </section>
     <section>
         <label for="Telefonnr">Telefonnr</label>
         <input id="Telefonnr" onchange="sjekkTelefonnr()"/>
-        <span id="ikkeTlfnr" style="color: red"></span>
     </section>
     </section>
     <section>
         <label for="Epost">Epost</label>
         <input id="Epost" type="email" onchange="sjekkEpost()"/>
-        <span id="ikkeEpost" style="color: red"></span>
     </section>
 </table>
 <button onclick="billettkjøp()">Kjøp billett</button>
