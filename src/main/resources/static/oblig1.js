@@ -75,14 +75,10 @@ function sjekkEtternavn() {
 
 function sjekkTelefonnr() {
     var Telefonnr = document.getElementById("Telefonnr")
+    var regex = /^[0-9]{8}$/
     const streng = Telefonnr.value;
-    const tall = Number(streng);
-    if (isNaN(tall)) {
+    if (!regex.test(streng)) {
         Telefonnr.setCustomValidity("Ikke et telefonnummer");
-        Telefonnr.reportValidity()
-        return false;
-    } else if (streng.length < 8 || streng.length > 8) {
-        Telefonnr.setCustomValidity("Telefonnr må ha 8 sifre");
         Telefonnr.reportValidity()
         return false;
     } else {
@@ -95,7 +91,7 @@ function sjekkTelefonnr() {
 
 function sjekkEpost() {
     var Epost = document.getElementById("Epost")
-    var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+$/
+    var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-z]{2,3}$/
     const epost = Epost.value;
     if (!regex.test(epost)) {
         console.log("jeg er ikke en epost")
